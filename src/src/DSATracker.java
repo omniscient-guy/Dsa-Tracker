@@ -6,7 +6,7 @@ public class DSATracker {
         dsa problem = new dsa();
         boolean running = true;
         while(running==true){
-            System.out.print("----DSA TRACKER MENU----\n1.Add Problem\n2.Delete Problem\n3.Search Problem\n4.View All Problem\n5.Add Statistics\n6.Exit\nEnter Choice:");
+            System.out.print("----DSA TRACKER MENU----\n1.Add Problem\n2.Delete Problem\n3.View All Problem\n4.Add Statistics\n5.Exit\nEnter Choice:");
             int choice = sc.nextInt();
             switch(choice){
                 case 1 -> {
@@ -15,16 +15,16 @@ public class DSATracker {
                 case 2 -> {
                     problem.DeleteProblem();
                 }
+//                case 2 -> {
+//                    problem.SearchProblem();
+//                }
                 case 3 -> {
-                    problem.SearchProblem();
-                }
-                case 4 -> {
                     problem.ViewAllProblem();
                 }
-                case 5 -> {
+                case 4 -> {
                     problem.ViewStatics();
                 }
-                case 6 -> {
+                case 5 -> {
                     System.out.println("THANK YOU FOR USING");
                     running = false;
                 }
@@ -33,8 +33,6 @@ public class DSATracker {
                 }
             }
         }
-
-
 
     }
 }
