@@ -6,7 +6,7 @@ public class DSATracker {
         dsa problem = new dsa();
         boolean running = true;
         while(running==true){
-            System.out.print("----DSA TRACKER MENU----\n1.Add Problem\n2.Delete Problem\n3.View All Problem\n4.Add Statistics\n5.Exit\nEnter Choice:");
+            System.out.print("----DSA TRACKER MENU----\n1.Add Problem\n2.Delete Problem\n3.View All Problem\n4.View Statistics\n5.Exit\nEnter Choice:");
             int choice = sc.nextInt();
             switch(choice){
                 case 1 -> {
